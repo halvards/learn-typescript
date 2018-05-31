@@ -1,0 +1,27 @@
+{
+  "name": "learn-typescript",
+  "version": "0.0.1",
+  "description": "Learn TypeScript",
+  "license": "MIT",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.4",
+    "gts": "^0.6.0",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "ts-node": "^6.0.5",
+    "typescript": "^2.8.4"
+  }
+}
