@@ -4,13 +4,15 @@
   "description": "Learn TypeScript",
   "license": "MIT",
   "private": true,
-  "main": "lib/index.js",
+  "main": "build/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/src/index.js",
+    "test": "jest --coverage --detectOpenHandles --forceExit --verbose",
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc -p .",
     "fix": "gts fix",
+    "lint": "gts check",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check"
@@ -23,5 +25,11 @@
     "ts-jest": "^22.4.6",
     "ts-node": "^6.0.5",
     "typescript": "^2.8.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [ "ts", "js" ],
+    "testEnvironment": "node",
+    "testMatch": [ "**/test/**/*.test.ts" ],
+    "transform": { "^.+\\.(ts|tsx)$": "ts-jest" }
   }
 }

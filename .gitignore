@@ -68,8 +68,8 @@ typings/
 
 # Editor
 *~
-.code/
 .idea/
+.vscode/
 
 # Credentials
 *account*.json
