@@ -1,6 +1,6 @@
 # learn-typescript
 
-References:
+## References:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tutorial](https://www.typescriptlang.org/docs/tutorial.html)
